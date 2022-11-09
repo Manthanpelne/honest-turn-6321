@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #nav{
+        display:flex;
+        justify-content:space-around;
+        background-color:rgb(5, 11, 5);
+        color:white;
+        padding-top:20px;
+        height:80px;
+    }
+    #nav>div{
+        display:flex;
+        gap:30px;
+        color: white;
+        font-size: 20px;
+        border:1px solid black;
+        
+    }
+    button{
+        width:80px;
+        height:40%;
+        font-size: 20px;
+        margin:10px;
+    }
+
+    #log{
+        width:30%;
+        margin: 50px auto;
+        text-align: center;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        padding:20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+    }
+
+    form{
+        text-align: center;
+    }
+    form>button{
+        width:60%;
+        padding:5px;
+        font-size:15px;
+        height:40px;
+    }
+
+    form>button:nth-child(1){
+        background-color: rgb(93, 93, 205);
+        color:white;
+        border: 1px solid  rgb(93, 93, 205);
+    }
+   
+    .home{
+        display: block;
+        color:white;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    input{
+        height:30px;
+        width:60%;
+    }
+
+    #forgot{
+        display: flex;
+        justify-content: space-around;
+    }
+    .c1{
+        font-size: 14px;
+    }
+
+    .login{
+        width: 60%;
+        background-color: rgb(33, 102, 33);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+        <a href="home.html" class="home">fiverr.</a>
+    <div>
+        <p>Fiver Bussiness</p>
+        <p>Explore</p>
+        <p>English</p>
+        <p>INR</p>
+        <p>Become a Seller</p>
+        <p>Sign in</p>
+        <button id="join">Join</button>
+    </div>
+</div>
+<div id="log">
+    <h1>Sign In to Fiverr</h1>
+    <form>
+        <button>Continue with Facebook</button><br>
+        <button>Continue with Google</button><br>
+        <button>Continue with Apple</button><br>
+        <p>OR</p>
+        <input type="" placeholder="Enter email" id="email">
+ <br><br>
+        <input type="" placeholder="Enter Password" id="Pass">
+        <br><br>
+        <div id="forgot">
+            <div class="c1">
+                <input type="checkbox" checked="checked"><label>Remember me</label>
+            </div>
+            <div>
+                <p>forgot Password?</p>
+            </div>
+        </div>
+        <br>
+        <input class="login" style="border: none" type="submit" value="LOGIN" />
+        <br>
+        <br>
+
+        <p>
+            Not a member yet?
+            <a href="signup.html"  style="text-decoration: none">Join Now</a>
+        </p>
+    </form>
+</div>    
+</body>
+</html>
+<script src="login.js"></script>
