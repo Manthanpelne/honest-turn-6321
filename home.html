@@ -66,7 +66,30 @@
         height:49px;
         border-radius: 8px;
     }
-  
+
+    #midt{
+        display: flex;
+        justify-content: space-around;
+        padding:30px;
+        background-color: rgb(254, 245, 236);
+    }
+    #midt>div p{
+        font-size:20px;
+    }
+
+    .ones{
+        font-size:25px;
+        font-weight: bold;
+        color:rgb(52, 50, 48);
+    }
+    #midt>div img{
+        padding-top:10px;
+    }
+  #midt>div h1{
+    font-size:40px;
+    color: rgb(59, 58, 58);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
   .s1{
     height:20px;
     margin:0px;
@@ -78,7 +101,7 @@
     width:90px;
     padding:10px;
     text-decoration: none;
-    align-items: center;
+    text-align: center;
   }
   button{
     width:30%;
@@ -95,6 +118,181 @@
   font-size: 20px;
   color: gray;
   }
+
+  #scrol{
+    width:1400px;
+    height:350px;
+    overflow-x: scroll;
+    background-color: white;
+    margin:50px auto;
+  }
+  .sc{
+    display:flex;
+    flex-direction:row;
+    gap:30px;
+  }
+
+  .sc img{
+ width:300px;
+ height:350px;
+  }
+
+  #exp{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   margin:50px auto;
+   text-align: center;
+}
+.x{
+     padding-left: 40px;
+    margin-top:80px;
+    font-family: sans-serif;
+ }
+#exp>div img{
+    width:60px;
+}
+
+#good{
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+    background-color: rgb(22, 22, 87);
+    color:white;
+}
+.fiv{
+    width:200px;
+    height:50px;
+    border-radius:4px;
+    background-color: rgb(14, 191, 94);
+    color:white;
+    border:1px solid rgb(14, 191, 94);
+}
+#good>div{
+    padding-top:40px;
+}
+#good>div img{
+    width:700px;
+}
+#good>div h2{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+#good>div h1{
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#good>div p{
+    font-size:20px;
+}
+
+#tim{
+    display: flex;
+    justify-content: space-around;
+    padding:40px;
+    color: rgb(98, 94, 94);
+    margin-top: 40px;
+}
+#tim>div{
+    padding:30px;
+    font-style: italic;
+}
+#tim>div p{
+    font-size: 20px;
+
+}
+
+#ins{
+display:flex;
+height:250px;
+margin-top: 40px;
+margin-left: 60px;
+gap:50px;
+font-weight: 800px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#ins>div>div{
+    display:flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#ins>div{
+    height:auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.l2{
+    height:250px;
+    width:300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.l3{
+    border-radius: 100%;
+    padding:10px;
+    width:
+    30px;
+    margin-left:40px;
+}
+
+.no{
+    font-family: sans-serif;
+    padding-left: 50px;
+    color:rgb(81, 81, 81);
+}
+
+#bt{
+    display: flex;
+    justify-content: space-around;
+    margin-top:170px;
+    color:white;
+    background-color: rgb(29, 28, 28);
+}
+
+#bt button{
+    height:60px;
+    border-radius: 4px;
+    font-size:23px;
+    width:200px;
+    margin-top:20px;
+    margin-left:150px;
+    background-color: rgb(14, 191, 94);
+}
+#bt h1{
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 150px;
+}
+#foot{
+    display: flex;
+    justify-content: space-evenly;
+    font-size:17px;
+    margin-top:100px;
+    font-family: sans-serif;
+}
+
+#foot>div p{
+    color:rgb(131, 130, 130)
+}
+
+#f2{
+    display:flex;
+    justify-content: space-between;
+    margin-top:60px;
+}
+.sello{
+    text-decoration: none;
+    color:white;
+    font-size: 23px;
+    padding-top:17px;
+}
+#f2>div img{
+    height:32px;
+    padding:20px;
+}
+#f2>div h1{
+    padding-left: 40px;
+  color: rgb(132, 131, 131);
+}
 </style>
 <body>
     <div id="nav">
@@ -104,7 +302,7 @@
             <p>Explore</p>
             <p>English</p>
             <p>INR</p>
-            <p>Become a Seller</p>
+            <a href="seller.html" class="sello">Become a Seller</a>
             <p>Sign in</p>
             <a class="link" href="./signup.html"> Join</a>
         </div>
@@ -113,7 +311,7 @@
     <div id="top">
      <div>
     <h1>Find the perfect freelance <br> services for your business</h1>
-    <input type="search" placeholder="try building mobile app" class="search"/><a href="search.html" class="s1">Search</a>
+    <input type="search" placeholder="try building mobile app" class="search"/><a href="Search.html" class="s1">Search</a>
     <div>
         <br>
         <label for="">Popular:</label>
@@ -136,7 +334,207 @@
         <p>P&G</p>
         <p>PayPal</p>
     </div>
+ 
 
+    <div id="scrol">
+        <div class="sc">
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/logo-design-2x.png" alt="">
+       <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="">
+       <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741669/voiceover-2x.png" alt="">
+      <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741663/animated-explainer-2x.png" alt="">
+      <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741667/social-2x.png" alt="">
+       <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741668/seo-2x.png" alt="">
+      <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741664/illustration-2x.png" alt="">
+     <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/book-covers-2x.png" alt="">
+      <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741664/data-entry-2x.png" alt="">
+      <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741674/translation-2x.png" alt="">
+    </div>
+    </div>
+
+    <div id="midt">
+   <div>
+    <h1>A whole world of freelance <br>talent at your fingertips</h1>
+    <p class="ones">☑ The best for every budget</p>
+    <p>Find high-quality services at every price point. No <br> hourly rates, just project-based pricing.</p>
+    <p class="ones">☑ Quality work done quickly</p>
+    <p>Find the right freelancer to begin working <br>on your project within minutes.</p>
+    <p class="ones">☑ Protected payments, every time</p>
+    <p>Always know what you'll pay upfront. Your payment</p>
+   </div>
+   <div>
+    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_700,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png" alt="">
+   </div>
+    </div>
+
+    <h1 class="x">Explore the marketplace</h1>
+
+    <div id="exp">
+    <div><img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg" alt="">
+        <p>Graphics Design</p></div>
+    <div> <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg" alt="">
+        <p>Digital Marketing</p></div>
+    <div> <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg" alt="">
+        <p>writing Translation</p></div>
+    <div> <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg" alt="">
+        <p>Video & Animation</p></div>
+        <div><img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg" alt="">
+            <p>Graphics Design</p></div>
+        <div> <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg" alt="">
+            <p>Digital Marketing</p></div>
+        <div> <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg" alt="">
+            <p>writing Translation</p></div>
+        <div> <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg" alt="">
+            <p>Video & Animation</p></div>
+        </div>
+    
+        <div id="good">
+            <div>
+                <h2>fiverr Business.</h2>
+               <h1>A business solution designed for teams</h1>
+               <p>Upgrade to a curated experience packed with tools <br>and benefits, dedicated to businesses</p>
+               <p>
+                ☑ Connect to freelancers with proven business experience<br>
+                ☑ Get matched with the perfect talent by a customer success manager <br>
+                ☑ Manage teamwork and boost productivity with one powerful workspace
+               </p>
+
+               <button class="fiv">Explore fiverr Bussiness</button>
+            </div>
+            <div>
+               <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624757/business-desktop-870-x1.png" alt="">
+            </div>
+         </div>
+
+         <div id="tim">
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173395/testimonial-video-still-haerfest.jpg" alt="">
+            </div>
+            <div>
+              <p>Tim and Dan Joo, Co-founders</p>
+              <h1>"When you want to create a business bigger than yourself, you need a lot of help. That's what fiverr does."</h1>
+            </div>
+         </div>
+
+         <h1 class="no">Get inspired with projects made by our freelancers</h1>
+         <div id="ins">
+          <div>
+             <div>
+                <img class="l2" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png" alt="">
+             </div>
+             <div>
+                <img class="l3" src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="">
+                <p>Packaging Design</p><br>
+
+            </div>
+          </div>
+          <div>
+            <div>
+               <img class="l2" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/spickex.jpeg" alt="">
+             </div>
+             <div>
+                <img class="l3" src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/profile/photos/22711136/original/fiverr_profile.jpg" alt="">
+                <p>Book Design</p><br>
+          
+            </div>
+          </div>
+          <div>
+            <div>
+              <img  class="l2" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615084/fernandobengua.png" alt="">
+             </div>
+             <div>
+                <img class="l3"  src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/0738007a913d22569fe2b049f9259526-1589210299120/db111eb4-c119-42b4-9a1d-9116601f3d22.png" alt="">
+                <p>Web Design</p><br>
+         
+            </div>
+          </div>
+          <div>
+            <div>
+                <img class="l2" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/annapietrangeli.jpeg" alt="">
+             </div>
+             <div>
+                <img class="l3" src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/8b60be1bf2915ddc1d551eaa252684d7-1589020928117/1d531e54-7607-4bdb-815f-088dbc0fb971.jpg" alt="">
+                <p>Illustration Design</p>
+            </div>
+          </div>
+         </div>
+   
+   
+   <div id="bt">
+        <div>
+            <h1>Find the talent needed to <br>get your business growing.</h1>
+            <button>Get Started</button>
+        </div>
+        <div>
+         <img src="https://i.pinimg.com/736x/67/cc/93/67cc93871df6d20e30ae3704dbb35aff.jpg" alt="">
+        </div>
+      </div>
+
+      <div id="foot">
+        <div>
+          <h3>Categories</h3>
+          <p>Digital Marketing</p>
+          <p>Writing & Translation</p>
+          <p>Video & Animation</p>
+          <p>Music & Audio</p>
+          <p>Programming & Tech</p>
+          <p>Data</p>
+          <p>Business</p>
+          <p>Lifestyle</p>
+          <p>Sitemap</p>  
+        </div>
+        <div>
+            <h3>About</h3>
+            <p>Career</p>
+            <p>Press & News</p>
+            <p>Partnership</p>
+            <p>Privacy Policy</p>
+            <P>Terms & Service</P>
+        </div>
+        <div>
+            <h3>Support</h3>
+            <p>Help & Support</p>
+            <p>Trust & Safety</p>
+            <p>Selling on Fiverr</p>
+            <p>Buying on Fiverr</p>
+        </div>
+        <div>
+            <h3>Community</h3>
+            <p>Events</p>
+            <p>Blog</p>
+            <p>Forum</p>
+            <p>Community Standards</p>
+            <p>Podcasts</p>
+            <p>Influencers</p>
+            <p>Affiliates</p>
+            <p>Invite a Friend</p>
+            <p>Become a Seller</p>
+        </div>
+        <div>
+            <h3>More From Fiverr</h3>
+            <p>Fiverr Business</p>
+            <p>Fiverr Pro</p>
+            <p>Fiverr Studios</p>
+            <p>Fiverr Logo Maker</p>
+            <p>Fiverr Guides</p>
+            <p>Get Inspired</p>
+            <p>Clearvoice</p>
+            <p>Fiverr Workspace</p>
+        </div>
+      </div>
+
+      <div id="f2">
+        <div>
+           <h1>fiverr.</h1>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuoNBRw5LmNrOyjqBSfwmNAPXAy_oZDAqph5sF7H605oarDXG2sLTACVB0QvlFEKvewko&usqp=CAU" alt="">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLaJhVaZNQi22ok88dJ8NQ4cgtcUinTtg7A&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzUcxaz3AsKuLcWQXJvsefHv1Snlu5iQysg&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5jrexnqUp2U-YXjN-l6TL1evwV4B1sgm1fQ&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYsOQhIpmGLhdu8OYk8x-gSRcvWxNOcVvJD4KjrqgsxU8-rITi_w9Wg8WaCNp_TzrVlg&usqp=CAU" alt="">
+        </div>
+
+      </div>
 </body>
 </html>
 
